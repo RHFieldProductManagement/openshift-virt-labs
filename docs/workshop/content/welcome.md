@@ -12,7 +12,7 @@ This is the self-hosted lab guide that will run you through the following topics
 * **Deploying OpenShift Virtualization**
 * **Setting up Storage for OpenShift Virtualization**
 * **Setting up Networking for OpenShift Virtualization**
-* **Deploying Test Workloads]**
+* **Deploying Test Workloads**
 * **Cloning Workloads**
 * **Performing Live Migrations and Node Maintenance**
 * **Utilising pod networking for VM's**
