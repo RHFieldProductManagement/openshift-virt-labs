@@ -118,9 +118,12 @@ You should be able to open up the application in the same browser that you're re
 Now, if you can tear yourself away from the game, let's actually start working with OpenShift virtualisation, first let's just clean up the default project...
 
 ~~~bash
-$ oc delete dc/duckhunt-js bc/duckhunt-js svc/duckhunt-js route/duckhunt-js
-deploymentconfig.apps.openshift.io "duckhunt-js" deleted                                                                                                                                           
-buildconfig.build.openshift.io "duckhunt-js" deleted                                                                                                                                               
+$ oc delete all -l app=duckhunt-js
 service "duckhunt-js" deleted
+deployment.apps "duckhunt-js" deleted
+buildconfig.build.openshift.io "duckhunt-js" deleted
+build.build.openshift.io "duckhunt-js-1" deleted
+imagestream.image.openshift.io "centos7-s2i-nodejs" deleted
+imagestream.image.openshift.io "duckhunt-js" deleted
 route.route.openshift.io "duckhunt-js" deleted
 ~~~
